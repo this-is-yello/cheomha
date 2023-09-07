@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cheomha</title>
 </head>
+
+<style>
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 8%;
+        z-index: 100;
+        background-color: aliceblue;
+        transition: 0.5s;
+    }
+    .navBar {
+        padding: 0 40px;
+        width: 1200px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+    }
+    .navigation-1 {
+        list-style: none;
+        display: flex;
+    }
+    .navigation-1 li a {
+        text-decoration: none;
+        padding: 0 12px;
+        font-size: 20px;
+        color: #1e1e1e;
+    }
+    .navigation-2 {
+        display: flex;
+    }
+    .navigation-2 div {
+        margin: 0 12px;
+        width: 40px;
+        height: 40px;
+        background-color: #1e1e1e;
+    }
+</style>
+
 <body>
-    
+    <header id="header">
+        <div class="navBar">
+
+            <h1 class="logo">
+                Cheomha
+            </h1>
+            <ul class="navigation-1">
+                <li><a href="#">Outer</a></li>
+                <li><a href="#">Suit</a></li>
+                <li><a href="#">Top</a></li>
+                <li><a href="#">Bottom</a></li>
+                <li><a href="#">Acc</a></li>
+            </ul>
+            <div class="navigation-2">
+                <div class="search"></div>
+                <div class="mypage"></div>
+                <div class="shopping-bag"></div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
