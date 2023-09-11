@@ -3,57 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cheomha</title>
 </head>
 
-<style>
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 8%;
-        z-index: 100;
-        background-color: aliceblue;
-        transition: 0.5s;
-    }
-    .navBar {
-        padding: 0 40px;
-        width: 1200px;
-        background-color: #ffffff;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        justify-items: center;
-    }
-    .navigation-1 {
-        list-style: none;
-        display: flex;
-    }
-    .navigation-1 li a {
-        text-decoration: none;
-        padding: 0 12px;
-        font-size: 20px;
-        color: #1e1e1e;
-    }
-    .navigation-2 {
-        display: flex;
-    }
-    .navigation-2 div {
-        margin: 0 12px;
-        width: 40px;
-        height: 40px;
-        background-color: #1e1e1e;
-    }
-</style>
-
 <body>
-    <header id="header">
+    <link rel="stylesheet" href="custom_/style.css">
+    <script src="custom_/main.js" defer="text/main.js"></script>
+    <header id="navigation">
         <div class="navBar">
-
             <h1 class="logo">
                 Cheomha
             </h1>
@@ -65,11 +23,29 @@
                 <li><a href="#">Acc</a></li>
             </ul>
             <div class="navigation-2">
-                <div class="search"></div>
-                <div class="mypage"></div>
-                <div class="shopping-bag"></div>
+                <div><div class="search"></div></div> <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
+                <div><div class="mypage"></div></div> <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
+                <div><div class="shopping-bag"></div></div> <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
             </div>
         </div>
     </header>
+
+    <script>
+        const aaa = document.querySelector(".navigation-2");
+        let b = true;
+        for(let i = 0; i < aaa.childElementCount; i++) {
+            aaa.children[i].addEventListener("click", () => {
+                if (b == true) {
+                    // aaa.setAttribute("style", 'background-color: #ff0000');
+                    aaa.children[i].children[0].style.backgroundColor = "#ff0000";
+                    b = false;
+                } else {
+                    // aaa.setAttribute("style", 'background-color: #1e1e1e');
+                    aaa.children[i].children[0].style.backgroundColor = "#1e1e1e";
+                    b = true;
+                }
+            });
+        }
+    </script>
 </body>
 </html>
