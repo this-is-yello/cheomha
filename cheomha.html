@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer="text/main.js"></script>
     <title>Cheomha</title>
 </head>
 
 <body>
-    <link rel="stylesheet" href="custom_/style.css">
-    <script src="custom_/main.js" defer="text/main.js"></script>
+    <!-- <link rel="stylesheet" href="custom_/style.css">
+    <script src="custom_/main.js" defer="text/main.js"></script> -->
+
     <header id="navigation">
         <div class="navBar">
             <h1 class="logo">
@@ -23,29 +25,87 @@
                 <li><a href="#">Acc</a></li>
             </ul>
             <div class="navigation-2">
-                <div><div class="search"></div></div> <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
-                <div><div class="mypage"></div></div> <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
-                <div><div class="shopping-bag"></div></div> <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
+                <div><div class="search"></div></div>
+                <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
+                <div><div class="mypage"></div></div>
+                <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
+                <div><div class="shopping-bag"></div></div>
+                <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
             </div>
         </div>
     </header>
 
+    <section class="carousel-content">
+        <div class="container">
+            <div class="box-1 box"></div>
+            <div class="box-2 box"></div>
+            <div class="box-3 box"></div>
+            <div class="box-4 box"></div>
+        </div>
+    </section>
+    <!-- <ul class=radio-container>
+        <div class="round-button">1</div>
+        <div class="round-button">2</div>
+        <div class="round-button">3</div>
+        <div class="round-button">4</div>
+    </ul> -->
+    <div class="event">
+        <h3 class="event-title">
+            Event
+        </h3>
+        <div class="event-contents">
+            <div class="event-1 event-con">
+                <figure class="pic-1 event-pic">
+                    <img src="img/main_banner01_pc.png" alt="">
+                </figure>
+                <h4 class="sub-title">
+                    WEEKLY EVENT
+                </h4>
+                <h6 class="go-btn">
+                    자세히보기
+                </h6>
+            </div>
+            <div class="event-2 event-con">
+                <figure class="pic-2 event-pic">
+                    <img src="img/main_banner02_pc.png" alt="">
+                </figure>
+                <h4 class="sub-title">
+                    SHOPPING LIVE
+                </h4>
+                <h6 class="go-btn">
+                    자세히보기
+                </h6>
+            </div>
+            <div class="event-3 event-con">
+                <figure class="pic-3 event-pic">
+                    <img src="img/main_banner03_pc.png" alt="">
+                </figure>
+                <h4 class="sub-title">
+                    NEW COLLECTION
+                </h4>
+                <h6 class="go-btn">
+                    자세히보기
+                </h6>
+            </div>
+        </div>
+        <!-- <div class="carousel-content">
+            <div class="container">
+                <figure class="box-1 box">
+                    <img src="SkinImg/img/main_banner01_pc.png" alt="" loading="lazy" ez-prevent="img">
+                </figure>
+                <figure class="box-2 box">
+                    <img src="SkinImg/img/main_banner02_pc.png" alt="" loading="lazy" ez-prevent="img">
+                </figure>
+                <figure class="box-3 box">
+                    <img src="SkinImg/img/main_banner03_pc.png" alt="" loading="lazy" ez-prevent="img">
+                </figure>
+            </div>
+        </div> -->
+
+
+        
     <script>
-        const aaa = document.querySelector(".navigation-2");
-        let b = true;
-        for(let i = 0; i < aaa.childElementCount; i++) {
-            aaa.children[i].addEventListener("click", () => {
-                if (b == true) {
-                    // aaa.setAttribute("style", 'background-color: #ff0000');
-                    aaa.children[i].children[0].style.backgroundColor = "#ff0000";
-                    b = false;
-                } else {
-                    // aaa.setAttribute("style", 'background-color: #1e1e1e');
-                    aaa.children[i].children[0].style.backgroundColor = "#1e1e1e";
-                    b = true;
-                }
-            });
-        }
+
     </script>
 </body>
 </html>
