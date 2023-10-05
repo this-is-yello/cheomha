@@ -13,49 +13,47 @@ for(let i = 0; i < aaa.childElementCount; i++) {
 }
 
 // ------------------------------ 캐러셀 ------------------------------
-const carouselContent = document.querySelector(".carousel-content");
-const container = document.querySelector(".container");
-const first = container.firstElementChild.cloneNode(true);
-const last = container.lastElementChild.cloneNode(true);
+// const carouselContent = document.querySelector(".carousel-content");
+// const container = document.querySelector(".container");
+// const first = container.firstElementChild.cloneNode(true);
+// const last = container.lastElementChild.cloneNode(true);
 
-container.insertBefore(last, container.firstElementChild);
-container.appendChild(first);
+// container.insertBefore(last, container.firstElementChild);
+// container.appendChild(first);
 
-const slideWidth = 100;
+// const slideWidth = 100;
 
-let moveCheck = true;
+// let moveCheck = true;
 
-container.style.width = container.childElementCount * slideWidth + "vw";
+// container.style.width = container.childElementCount * slideWidth + "vw";
 
-let num = 1;
-carouselContent.children[0].style.transform = "translateX(-" + (num * 100) + "vw)";
+// let num = 1;
+// carouselContent.children[0].style.transform = "translateX(-" + (num * 100) + "vw)";
 
-let inter = setInterval(() => {
-        goNext();
-    }, 3000);
+// let inter = setInterval(() => {
+//         goNext();
+//     }, 4000);
     
-function goNext() {
-    if (moveCheck) {
-        num++;
-        moveCheck = false;
+// function goNext() {
+//     if (moveCheck) {
+//         num++;
+//         moveCheck = false;
 
-        setTimeout(() => {
-            if (num === container.childElementCount - 1) {
-                num = 1;
-                moveSlide(0);
-            }
+//         setTimeout(() => {
+//             if (num === container.childElementCount - 1) {
+//                 num = 1;
+//                 moveSlide(0);
+//             }
 
-            // console.log(num);
-            moveCheck = true;
-        }, 2000);
+//             moveCheck = true;
+//         }, 4000);
 
-        // console.log(num);
-        moveSlide(1);
-    }
-}
+//         moveSlide(1);
+//         // console.log(num + 'pic Carousel');
+//     }
+// }
 
-function moveSlide(time) {
-    container.style.transition = time + "s";
-    carouselContent.children[0].style.transform = "translateX(-" + (num * 100) + "vw)";
-}
-        
+// function moveSlide(time) {
+//     container.style.transition = time + "s";
+//     carouselContent.children[0].style.transform = "translateX(-" + (num * 100) + "vw)";
+// }
