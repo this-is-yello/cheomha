@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="custom_/style.css">
     <script src="custom_/main.js" defer="text/main.js"></script> -->
 
-    <header id="navigation">
+    <!-- <header id="navigation">
         <div class="navBar">
             <h1 class="logo">
                 Logo
@@ -26,129 +26,772 @@
             </ul>
             <div class="navigation-2">
                 <div><div class="search"></div></div>
-                <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
                 <div><div class="mypage"></div></div>
-                <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
                 <div><div class="shopping-bag"></div></div>
-                <!-- 감싸고 있는 div를 a로 바꿔야합니다. -->
             </div>
         </div>
-    </header>
+    </header> -->
 
-    <!-- <section class="carousel-content" >
+    <!-- <div class="carousel-content">
         <div class="container">
-            <div class="box-1 box"></div>
-            <div class="box-2 box"></div>
-            <div class="box-3 box"></div>
-            <div class="box-4 box"></div>
+            <figure class="box-1 box">
+                <img src="img/main_banner01_pc.png" alt="" loading="lazy" ez-prevent="img">
+            </figure>
+            <figure class="box-2 box">
+                <img src="img/main_banner02_pc.png" alt="" loading="lazy" ez-prevent="img">
+            </figure>
+            <figure class="box-3 box">
+                <img src="img/main_banner03_pc.png" alt="" loading="lazy" ez-prevent="img">
+            </figure>
         </div>
+    </div> -->
+
+    <!-- <section class="bykak-story">
+        <div class="sub-menu">
+            <ul class="menu-ul">
+                <li class="menu-1">CEO Message</li>
+                <li class="menu-2">History</li>
+                <li class="menu-3">CI·BI</li>
+            </ul>
+        </div>
+        <div class="ceo-message">
+            <figure class="image">
+                <img src="img/ceo_message.png" alt="ceo_photo">
+            </figure>
+            <div class="message">
+                <h2>CEO Message</h2>
+                <br>
+                <h3>I'm Juhyeon KIM</h3>
+                <br>
+                <h4>#Sewing tradition and authenticity</h4>
+                <br>
+                <p>
+                    Black Label, the top label of 'by覺', isIncheon's only bespoke tailor shop<br>based on custom tailoring that is made quickly, easily consumed,<br>and allows the wearer's occupation, taste, and memories<br>to be shared, rather than being discarded.<br>Taking care of myself and not following trends,<br>that is the charm of bespoke.<br>Our main customers are men who love themselves,<br>are confident and live successful lives.<br>Wearing the right clothes will enrich our lives.<br>I pray for a good relationship.<br><br>thank you
+                </p>
+            </div>
+        </div>
+        <div class="history">
+            <h2 style="font-family: 'Times New Roman', Times, serif;">
+                History
+            </h2>
+            <figure class="image">
+                <img src="img/history.png" alt="history_image">
+            </figure>
+        </div>    
+        <div class="ci-bi">
+            <h2 style="font-family: 'Times New Roman', Times, serif;">
+                1. Logo
+            </h2>
+            <div class="black-logo logos">
+                <figure class="image-1 image">
+                    <img src="img/bykakLogo_b.png" alt="logo_1">
+                </figure>
+                <figure class="image-2 image">
+                    <img src="img/bykakTextLogo_b.png" alt="logo_2">
+                </figure>
+            </div>
+            <div class="white-logo logos">    
+                <figure class="image-3 image">
+                    <img src="img/bykakLogo_w.png" alt="logo_3">
+                </figure>
+                <figure class="image-4 image">
+                    <img src="img/bykakTextLogo_w.png" alt="logo_4">
+                </figure>
+            </div>
+            <h2 style="font-family: 'Times New Roman', Times, serif;" class="m-t20">
+                2. Symbol Mark
+            </h2>
+            <div class="symbol logos m-b20">
+                <figure class="image-5 image">
+                    <img src="img/bykakScissorLogo_b.png" alt="logo_5">
+                </figure>
+                <figure class="image-6 image">
+                    <img src="img/bykakScissorLogo_w.png" alt="logo_6">
+                </figure>
+            </div>
+            <h2 style="font-family: 'Times New Roman', Times, serif;">
+                3. Brand Color
+            </h2>
+            <div class="brand-color">
+                <div class="color-box"></div>
+                <div class="color-sub">
+                    <h4>bykak Green</h4>
+                    <p>Hex: #205B48</p>
+                    <p>RGB: (32, 91, 72)</p>
+                    <p>CMYK: (65, 0, 21, 64)</p>
+                </div>
+            </div>
+        </div>
+        <style>
+            .bykak-story {
+                width: 100%;
+            }
+            .bykak-story ul {
+                width: 300px;
+                height: 48px;
+                margin: 0;
+                padding: 0 16px;
+                border-radius: 32px;
+                background-color: #1e1e1e;
+                margin-bottom: 32px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .bykak-story ul > li {
+                line-height: 48px;
+                color: #ffffff;
+            }
+            .bykak-story ul > li:hover {
+                cursor: pointer;
+                color: grey;
+            }
+            
+            .ceo-message {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .ceo-message > .image {
+                width: 300px;
+                margin-right: 16px;
+            }
+            .ceo-message > .image > img {
+                width: 300px;
+            }
+            @media screen and (max-width: 1200px) {
+                .ceo-message {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .ceo-message > .image {
+                    width: 100%;
+                    height: 800px;
+                    margin-right: 16px;
+                }
+                .ceo-message > .image > img {
+                    width: 100%;
+                    height: 800px;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+            
+            .history {
+                width: 100%;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+            }
+            .history > .image {
+                width: 70%;
+            }
+            .history > .image > img {
+                width: 70%;
+            }
+            
+            .ci-bi {
+                width: 100%;
+                display: none;
+                flex-direction: column;
+                align-items: start;
+            }
+            .ci-bi > .logos {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                border: solid #1e1e1e 2px;
+            }
+            .logos > .image {
+                width: 50%;
+                padding-left: 10%; 
+            }
+            .logos > .image > img {
+                width: 70%;
+            }
+            .black-logo {
+                background-color: #ffffff;
+            }
+            .white-logo {
+                background-color: #1e1e1e;
+            }
+            .symbol > .image-6 {
+                background-color: #1e1e1e;
+            }
+            .brand-color {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                width: 100%;
+                border: solid #1e1e1e 2px;
+            }
+            .brand-color > .color-box {
+                width: 120px;
+                height: 120px;
+                margin: 0 16px;
+                background-color: #205B48;
+                border-radius: 100%;
+            }
+            .color-sub > h4 {
+                color: #205B48;
+                padding-bottom: 12px;
+            }
+        </style>
+
+        <script>
+            const bykakStory = document.querySelector(".bykak-story");
+            const subMenu = document.querySelector(".menu-ul");
+
+            for(let i = 0; i < subMenu.childElementCount; i++) {
+                subMenu.children[i].addEventListener("click", () => {
+                    if (i + 1 == 1) {
+                        bykakStory.children[1].style.display = "flex";
+                        bykakStory.children[2].style.display = "none";
+                        bykakStory.children[3].style.display = "none";
+                    } else if (i + 1 == 2) {
+                        bykakStory.children[1].style.display = "none";
+                        bykakStory.children[2].style.display = "flex";
+                        bykakStory.children[3].style.display = "none";
+                    } else {
+                        bykakStory.children[1].style.display = "none";
+                        bykakStory.children[2].style.display = "none";
+                        bykakStory.children[3].style.display = "flex";
+                    }
+                });
+            }
+        </script>
     </section> -->
 
-    <!-- <ul class=radio-container>
-        <div class="round-button">1</div>
-        <div class="round-button">2</div>
-        <div class="round-button">3</div>
-        <div class="round-button">4</div>
-    </ul> -->
 
-    <!-- <div class="event"> -->
-        <!-- <h3 class="event-title">
-            Event
-        </h3> -->
-        
-        <!-- <div class="event-contents">
-            <div class="event-1 event-con">
-                <figure class="pic-1 event-pic">
-                    <img src="img/main_banner01_pc.png" alt="">
-                </figure>
-                <h4 class="sub-title">
-                    WEEKLY EVENT
-                </h4>
-                <h6 class="go-btn">
-                    자세히보기
-                </h6>
-            </div>
-            <div class="event-2 event-con">
-                <figure class="pic-2 event-pic">
-                    <img src="img/main_banner02_pc.png" alt="">
-                </figure>
-                <h4 class="sub-title">
-                    SHOPPING LIVE
-                </h4>
-                <h6 class="go-btn">
-                    자세히보기
-                </h6>
-            </div>
-            <div class="event-3 event-con">
-                <figure class="pic-3 event-pic">
-                    <img src="img/main_banner03_pc.png" alt="">
-                </figure>
-                <h4 class="sub-title">
-                    NEW COLLECTION
-                </h4>
-                <h6 class="go-btn">
-                    자세히보기
-                </h6>
-            </div>
-        </div> -->
+    <!-- ----------------------------------------------------------------------------------- -->
 
-        <!-- <div class="carousel-content">
-            <div class="container">
-                <figure class="box-1 box">
-                    <img src="SkinImg/img/main_banner01_pc.png" alt="" loading="lazy" ez-prevent="img">
-                </figure>
-                <figure class="box-2 box">
-                    <img src="SkinImg/img/main_banner02_pc.png" alt="" loading="lazy" ez-prevent="img">
-                </figure>
-                <figure class="box-3 box">
-                    <img src="SkinImg/img/main_banner03_pc.png" alt="" loading="lazy" ez-prevent="img">
-                </figure>
+    <!-- <div class="logo-bar">
+        <figure>
+            <img src="http://kimjuhyeon.mycafe24.com/wp-content/uploads/2023/10/bykakTextLogo_w.png" alt="로고" class="logo">
+        </figure>
+    </div>
+    <div class="go-btns">
+        <div class="mall-area btn-area">
+            <div class="to-mall go-to">
+                <a href="#">Go to Mall</a>
             </div>
-        </div> -->
-    <!-- </div> -->
-
-    <div class="product-grid">
-        <div class="prdBox prdBox_1">
-            <img src="img/main_banner02_pc.png" alt="">
-            <p class="name">이름1</p>
-            <p class="price">1,000원</p>
         </div>
-        <div class="prdBox prdBox_2">
-            <img src="img/main_banner02_pc.png" alt="">
-            <p class="name">이름1</p>
-            <p class="price">1,000원</p>
-        </div>
-        <div class="prdBox prdBox_3">
-            <img src="img/main_banner02_pc.png" alt="">
-            <p class="name">이름1</p>
-            <p class="price">1,000원</p>
-        </div>
-        <div class="prdBox prdBox_4">
-            <img src="img/main_banner02_pc.png" alt="">
-            <p class="name">이름1</p>
-            <p class="price">1,000원</p>
-        </div>
-        <div class="prdBox prdBox_5">
-            <img src="img/main_banner02_pc.png" alt="">
-            <p class="name">이름1</p>
-            <p class="price">1,000원</p>
+        <div class="home-area btn-area">
+            <div class="to-home go-to">
+                <a href="#">Go to Home</a>
+            </div>
         </div>
     </div>
-    
-    <div class="bykak-video">
-        <iframe width="720" height="405" src="https://www.youtube.com/embed/s_SlnX_7yvk?si=6em8fPIHpB584RDx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+
     <style>
-        .bykak-video {
-            width: 100vw;
-            height: 405px;
-            background-color: #1e1e1e;
+        .logo-bar {
+            width: 100%;
+            height: 80px;
             display: flex;
             justify-content: center;
-            align-content: center;
-            justify-items: center;
+            align-items: center;
+            background-color: #1e1e1e;
+            position: fixed;
+        }
+        .logo-bar > figure {
+            width: 160px;
+            /* height: 64px; */
+        }
+        .logo-bar > figure > img {
+            width: 160px;
+        }
+        .go-btns {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            background-color: #1e1e1e;
+        }
+        .btn-area {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
             align-items: center;
         }
+        .go-to a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .go-to a:hover {
+            font-size: 16px;
+            transition: 0.2s;
+        }
+        @media screen and (max-width: 767px) {
+            .go-btns {
+                flex-direction: column;
+            }
+            .btn-area {
+                width: 100%;
+                height: 50vh;
+            }
+        }
+    </style> -->
+
+    <!-- <div class="slideshow">
+        <div class="slide">
+            <h1>k!mjuhyeon by 覺</h1>
+            <p>Sweing tradition and authenticity</p>
+            <div class="more-btn">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="slide">
+            <h1>by 覺 Tailor Academy</h1>
+            <p>Creating better work than yesterday is the craftsmanship</p>
+            <div class="more-btn">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="slide">
+            <h1>New JemulpoClub</h1>
+            <p>Cultural space that embodies the meaning of a social club</p>
+            <div class="more-btn">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="slide">
+            <h1>by 覺 Suit Rental Center</h1>
+            <p>Confidence for that day, by 覺</p>
+            <div class="more-btn">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .slideshow {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: 1s;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            animation: fadeout 5700ms infinite;
+        }
+        .slide > h1 {
+            color: #1e1e1e;
+        }
+        .slide > p {
+            color: #1e1e1e;
+        }
+        .more-btn {
+            padding-top: 20px;
+        }
+        .more-btn > a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #1e1e1e;
+        }
+        .more-btn > a:hover {
+            font-size: 16px;
+        }
+        @keyframes fadeout {
+            from {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
     </style>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function nextSlide() {
+            slides[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].style.display = 'flex';
+        }
+        
+        
+        slides[currentIndex].style.display = 'flex';
+
+
+        setInterval(nextSlide, 5700);
+    </script> -->
+
+
+    <!-- <section class="supporters">
+        <div class="sub-menu">
+            <ul class="menu-ul">
+                <li class="menu-1">kak in (覺人)</li>
+                <li class="menu-2">Ambassador</li>
+            </ul>
+        </div>
+        <div class="kak-in">
+            <h2 style="font-family: 'Times New Roman', Times, serif;">Hope that watch, learn and understand<br>about suits starting with by覺</h2>
+            <p>We sincerely thank you for choosing “by覺” among the numerous custom suit shops and purchasing with confidence.<br>We have never forgotten that the people who have loved us so far are the foundation of our brand.<br>Therefore, this membership system was created to repay that love and to communicate more intimately with customers.</p>
+    
+            <h2 style="font-family: 'Times New Roman', Times, serif;">kak in (覺人)</h2>
+            <figure class="kak-in-img">
+                <img src="http://kimjuhyeon.mycafe24.com/wp-content/uploads/2023/11/kakin.png" alt="">
+            </figure>
+        </div>
+        <div class="ambassador">
+            <h2 style="font-family: 'Times New Roman', Times, serif;">Dressing properly makes our lives well-off</h2>
+            <h2 style="font-family: 'Times New Roman', Times, serif;">Ambassador activities</h2>
+            <div class="activity">
+                <div class="act-1 act">
+                    <p>1. Make contents</p>
+                    <p>Promote products by directly producing<br>photos and videos to be posted<br>on Instagram, YouTube, etc.</p>
+                </div>
+                <div class="act-2 act">
+                    <p>2. User influx and purchases</p>
+                    <p>Users who have accessed the content<br>directlypurchase items using<br>the influencer’s recommendation code.</p>
+                </div>
+                <div class="act-3 act">
+                    <p>3. Settlement of commission</p>
+                    <p>Once purchase is confirmed,<br>contracted commission is paid based on<br>sales performance</p>
+                </div>
+            </div>
+            <div class="apply-btn">
+                <a href="https://kimjuhyeonbykak.cafe24.com/linkmade_join.html" target="_blank" rel="noopener noreferrer">
+                    Application for Ambassador
+                </a>
+            </div>
+        </div>
+    
+        <style>
+            .supporters {
+                width: 100%;
+            }
+            .supporters > .sub-menu {
+                padding-bottom: 32px;
+            }
+            .supporters ul {
+                width: 300px;
+                height: 48px;
+                margin: 0 0 32px 0;
+                padding: 0 16px;
+                border-radius: 32px;
+                background-color: #1e1e1e;
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+            }
+            .supporters ul > li {
+                line-height: 48px;
+                color: #ffffff;
+            }
+            .supporters ul > li:hover {
+                cursor: pointer;
+                color: grey;
+            }
+    
+            .kak-in {
+                display: block;
+            }
+            .kak-in > h2 {
+                margin-bottom: 16px;
+            }
+            .kak-in > p {
+                margin-bottom: 40px;
+            }
+            .kak-in > .kak-in-img {
+                width: 100%;
+            }
+            .kak-in-img > img {
+                width: 100%;
+            }
+            
+            .ambassador {
+                display: none;
+            }
+            .ambassador > h2 {
+                margin-bottom: 16px;
+            }
+            .ambassador > h2:nth-child(2) {
+                margin-top: 24px;
+                margin-bottom: 16px;
+            }
+            .activity {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .activity > .act {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .activity > .act > p {
+                text-align: center;
+            }
+            .activity > .act > p:first-child {
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            .apply-btn {
+                width: 100%;
+                height: 56px;
+                margin-top: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .apply-btn > a {
+                width: 240px;
+                height: 56px;
+                line-height: 56px;
+                text-align: center;
+                background-color: #1e1e1e;
+                color: #ffffff;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 12px;
+                transition: 0.2s;
+            }
+            .apply-btn > a:hover {
+                background-color: #205B48;
+            }
+    
+            @media screen and (max-width: 960px) {
+                .activity {
+                    flex-direction: column;
+                }
+                .activity > .act {
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+    
+        <script>
+            const bykakStory = document.querySelector(".supporters");
+            const subMenu = document.querySelector(".menu-ul");
+    
+            for(let i = 0; i < subMenu.childElementCount; i++) {
+                subMenu.children[i].addEventListener("click", () => {
+                    if (i + 1 == 1) {
+                        bykakStory.children[1].style.display = "block";
+                        bykakStory.children[2].style.display = "none";
+                    } else {
+                        bykakStory.children[1].style.display = "none";
+                        bykakStory.children[2].style.display = "block";
+                    }
+                });
+            }
+        </script>
+    </section> -->
+
+    <!-- <section class="counter">
+        <div class="suits count animation">
+            Total of <span class="count_1">5,994</span> Suits
+        </div>
+        <div class="stitches count animation">
+            Total of <span class="count_2">59,804,019</span> Stitches
+        </div>
+        <div class="hours count animation">
+            Total of <span class="count_3">592,119</span> Hours
+        </div>
+
+        <style>
+            .counter {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .count {
+                font-size: 32px;
+                color: #1e1e1e;
+            }
+            .count > span {
+                font-weight: bold;
+            }
+            .stitches {
+                margin: 16px 0;
+            }
+            @media screen and (max-width: 1024px) {
+                .count {
+                    font-size: 24px;
+                }
+            }
+            @media screen and (max-width: 767px) {
+                .count {
+                    font-size: 20px;
+                }
+            }
+        </style>
+
+        <script>
+            suitCount();
+            stitchCount();
+            hourCount();
+            const rePlay_1 = setInterval(suitCount, 10000);
+            const rePlay_2 = setInterval(stitchCount, 10000);
+            const rePlay_3 = setInterval(hourCount, 10000);
+            
+            function suitCount() {
+                let countBox_1 = document.querySelector('.count_1'),
+                count_1 = 1000;
+                
+                let counting_1 = setInterval(function () {
+                    if (count_1 == 6016) {
+                        clearInterval(counting_1);
+                        return false;
+                    }
+                    count_1 += 12;
+                    countBox_1.innerHTML = new Intl.NumberFormat().format(count_1);
+                }, 2);
+            }
+            function stitchCount() {
+                let countBox_2 = document.querySelector('.count_2'),
+                count_2 = 60000000;
+                
+                let counting_2 = setInterval(function () {
+                    if (count_2 == 60154008) {
+                        clearInterval(counting_2);
+                        return false;
+                    }
+                    count_2 += 248;
+                    countBox_2.innerHTML = new Intl.NumberFormat().format(count_2);
+                }, 2);
+            }
+            function hourCount() {
+                let countBox_3 = document.querySelector('.count_3'),
+                count_3 = 500000;
+                
+                let counting_3 = setInterval(function () {
+                    if (count_3 === 595604) {
+                        clearInterval(counting_3);
+                        return false;
+                    }
+                    count_3 += 124;
+                    countBox_3.innerHTML = new Intl.NumberFormat().format(count_3);
+                }, 2);
+            }
+        </script>
+    </section> -->
+
+    <section class="do-something">
+        <p>What can I do by learning tailoring skills?</p>
+        <div class="do-slide-moniter">
+            <div class="do-all-slide">
+                <div class="do-slide slide-1">
+                    <p>I'm going to <span>make my own suit</span></p>
+                </div>
+                <div class="do-slide slide-2">
+                    <p>I'm going to <span>start a tailor shop</span></p>
+                </div>
+                <div class="do-slide slide-3">
+                    <p>I'm going to <span>open a shopping mall</span></p>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .do-something {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                color: #1e1e1e;
+            }
+            .do-something > p {
+                font-size: 18px;
+                margin-bottom: 4px;
+            }
+            .do-slide-moniter {
+                width: 100%;
+                height: 28px;
+                overflow: hidden;
+            }
+            .do-all-slide {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 72px;
+            }
+            .do-slide {
+                width: 100%;
+                height: 24px;
+                padding-bottom: 4px;
+            }
+            .do-slide > p {
+                width: 100%;
+                text-align: center;
+                font-size: 18px;
+                line-height: 24px;
+            }
+            .do-slide > p > span {
+                font-weight: bold;
+            }
+            @media screen and (max-width: 767px) {
+                .do-something > p {
+                    font-size: 15px;
+                }
+                
+            }
+        </style>
+
+        <script>
+            function goDown() {
+                if (moveCheck) {
+                num++;
+                moveCheck = false;
+                setTimeout(() => {
+                    if (num === allSlide.childElementCount - 1) {
+                    num = 1;
+                    moveSlide(0);
+                    }
+                    moveCheck = true;
+                }, 1000);
+                moveSlide(1);
+                }
+            }
+            
+            function moveSlide(time) {
+                allSlide.style.transition = time + "s";
+                slideMoniter.children[0].style.transform = "translateY(-" + num * slideHeight + "px)";
+            }
+
+            const slideMoniter = document.querySelector(".do-slide-moniter");
+            const allSlide = document.querySelector(".do-all-slide");      
+            const slideFirst = allSlide.firstElementChild.cloneNode(true);
+            const slideLast = allSlide.lastElementChild.cloneNode(true);
+            allSlide.appendChild(slideFirst);
+            allSlide.insertBefore(slideLast, allSlide.firstElementChild);
+            
+            let moveCheck = true;
+            let slideHeight = allSlide.firstElementChild.offsetHeight;
+            let num = 1;
+
+            slideMoniter.children[0].style.transform = "translateY(-" + num * slideHeight + "px)";
+            
+            let inter = setInterval(() => {
+                goDown();
+                console.log('dddd')
+            }, 4000);
+        </script>
+    </section>
+
 </body>
 </html>

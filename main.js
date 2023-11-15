@@ -1,16 +1,17 @@
-const aaa = document.querySelector(".navigation-2");
-let b = [true, true, true];
-for(let i = 0; i < aaa.childElementCount; i++) {
-    aaa.children[i].addEventListener("click", () => {
-        if (b[i] == true) {
-            aaa.children[i].children[0].style.backgroundColor = "#ff0000";
-            b[i] = false;
-        } else {
-            aaa.children[i].children[0].style.backgroundColor = "#1e1e1e";
-            b[i] = true;
-        }
-    });
-}
+// ------------------------------ 메뉴바 ------------------------------
+// const aaa = document.querySelector(".navigation-2");
+// let b = [true, true, true];
+// for(let i = 0; i < aaa.childElementCount; i++) {
+//     aaa.children[i].addEventListener("click", () => {
+//         if (b[i] == true) {
+//             aaa.children[i].children[0].style.backgroundColor = "#ff0000";
+//             b[i] = false;
+//         } else {
+//             aaa.children[i].children[0].style.backgroundColor = "#1e1e1e";
+//             b[i] = true;
+//         }
+//     });
+// }
 
 // ------------------------------ 캐러셀 ------------------------------
 // const carouselContent = document.querySelector(".carousel-content");
