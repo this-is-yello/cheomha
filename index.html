@@ -689,7 +689,7 @@
         </script>
     </section> -->
 
-    <section class="do-something">
+    <!-- <section class="do-something">
         <p>What can I do by learning tailoring skills?</p>
         <div class="do-slide-moniter">
             <div class="do-all-slide">
@@ -791,7 +791,163 @@
                 console.log('dddd')
             }, 4000);
         </script>
-    </section>
+    </section> -->
 
+    <section class="book-area">
+        <div class="book-contents">
+            <div class="book-btn">
+                <figure>
+                    <img src="http://kimjuhyeon.mycafe24.com/wp-content/uploads/2023/11/reserved_icon.png" alt="icon">
+                </figure>
+            </div>
+            <div class="book-screen">
+                <p>Reservation</p>
+                <a class="tailor-shop-book go-to-book" href="#">
+                    <p>k!mjuhyeon by 覺 Tailor Shop</p>
+                </a>
+                <a class="tailor-academy-book go-to-book" href="#">
+                    <p>by 覺 Tailor Academy</p>
+                </a>
+                <a class="studio-book go-to-book" href="#">
+                    <p>New JemulpoClub Studio</p>
+                </a>
+                <a class="rental-center-book go-to-book" href="#">
+                    <p>by 覺 Suit Rental Center</p>
+                </a>
+            </div>
+        </div>
+
+        <style>
+            .book-contents {
+                position: fixed;
+                bottom: 16px;
+                right: 16px;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: end;
+            }
+            .book-btn {
+                z-index: 100;
+                width: 56px;
+                height: 56px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 40%;
+                background-color: #1e1e1e;
+                box-shadow: 0 3px 20px 1px #00000066;
+                transition: 300ms;
+            }
+            .book-btn:hover {
+                cursor: pointer;
+                box-shadow: 0 5px 20px 5px #00000045;
+            }
+            .book-btn > figure {
+                width: 32px;
+                height: 25px;
+            }
+            .book-btn > figure > img {
+                width: 32px;
+                height: 25px;
+            }
+
+            .book-screen {
+                width: 390px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 16px;
+                background-color: #F7F7F8;
+                border-radius: 32px;
+                box-shadow: 0 5px 40px 8px #00000045;
+                transition: 500ms;
+            }
+            .book-screen > p {
+                width: 358px;
+                margin: 16px;
+                font-size: 24px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .book-screen > .go-to-book {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                width: 358px;
+                height: 100px;
+                margin: 16px;
+                border-radius: 16px;
+                filter: grayscale(100%);
+                transition: 300ms;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .book-screen > .go-to-book:hover {
+                cursor: pointer;
+                filter: grayscale(0);
+            }
+            .book-screen > .go-to-book > p {
+                color: #ffffff;
+                font-size: 18px;
+            }
+            .tailor-shop-book {
+                background-image: url(http://kimjuhyeon.mycafe24.com/wp-content/uploads/2023/11/book_tailor.png);
+            }
+            .tailor-academy-book {
+                background-image: url(http://kimjuhyeon.mycafe24.com/wp-content/uploads/2023/11/book_academy-scaled.jpg);
+            }
+            .studio-book {
+                background-image: url(http://kimjuhyeon.mycafe24.com/wp-content/uploads/2023/10/jemulpo_club_3.png);
+            }
+            .rental-center-book {
+                background-image: url(http://kimjuhyeon.mycafe24.com/wp-content/uploads/2023/10/rental_center_1.png);
+            }
+            
+        
+            @media screen and (max-width: 767px) {
+                .book-contents {
+                    bottom: 16px;
+                    right: 16px;
+                }
+                .book-btn {
+                    width: 40px;
+                    height: 40px;
+                    box-shadow: 0 1px 8px 1px #00000045;
+                }
+                .book-btn > figure {
+                    width: 24px;
+                }
+                .book-btn > figure > img {
+                    width: 24px;
+                }
+            }
+        </style>
+
+        <script>
+            const bookBtn = document.querySelector(".book-btn");
+            const bookScreen = document.querySelector(".book-screen");
+            clickBtn = false;
+
+            bookScreen.setAttribute("style", "opacity: 0; display: none;");
+            
+            bookBtn.addEventListener("click", () => {
+                if(clickBtn == false) {
+                    bookScreen.setAttribute("style", "opacity: 0; transform: translateY(50px);");
+                    setTimeout(function() {
+                        bookScreen.setAttribute("style", "opacity: 1;");
+                    }, 10)
+                    clickBtn = true;
+                } else {
+                    bookScreen.setAttribute("style", "opacity: 0; transform: translateY(50px);");
+                    setTimeout(function() {
+                        bookScreen.setAttribute("style", "opacity: 0; display: none;");
+                    }, 500)
+                    clickBtn = false;
+                }
+            });
+        </script>
+    </section>
 </body>
 </html>
