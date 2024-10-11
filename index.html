@@ -14,9 +14,7 @@
 
     <!-- <header id="navigation">
         <div class="navBar">
-            <h1 class="logo">
-                Logo
-            </h1>
+            2
             <ul class="navigation-1">
                 <li><a href="#">Outer</a></li>
                 <li><a href="#">Suit</a></li>
@@ -266,98 +264,162 @@
 
     <!-- ----------------------------------------------------------------------------------- -->
 
-    <!-- <div class="logo-bar">
+    <div class="logo-bar">
         <figure>
-            <img src="http://kimjuhyeon.mycafe24.com/wp-content/uploads/2023/10/bykakTextLogo_w.png" alt="로고" class="logo">
+            <img src="http://kimjuhyeon.mycafe24.com/wp-content/uploads/2023/10/bykakTextLogo_w.png" alt="kimjuhyeon by kak" class="logo">
         </figure>
+        <h1>kimjuhyeon by kak</h1>
     </div>
-    <div class="go-btns">
-        <div class="mall-area btn-area">
-            <div class="to-mall go-to">
-                <a href="#">Go to Mall</a>
-            </div>
-        </div>
-        <div class="home-area btn-area">
+    
+    <div class="go-btns">   
+        <a href="https://bykak.com/home-kr/" class="home-area btn-area">
             <div class="to-home go-to">
-                <a href="#">Go to Home</a>
+                <p style="font-family: 'Times New Roman', Times, serif;">
+                    BESPOKE
+                </p>
+                <span style="font-family: 'Vujahday Script', Sans-serif;">
+                    The World's Finest Handcrafted Clothes
+                </span>
             </div>
-        </div>
+        </a>
+        <a href="https://kimjuhyeonbykak.cafe24.com/" class="mall-area btn-area">
+            <div class="to-mall go-to">
+                <p style="font-family: 'Times New Roman', Times, serif;">
+                    READY TO WEAR
+                </p>
+                <span style="font-family: 'Vujahday Script', Sans-serif;">
+                    Timeless Seasonal Tailoring
+                </span>
+            </div>
+        </a>
     </div>
-
+    
     <style>
         .logo-bar {
             width: 100%;
-            height: 80px;
+            height: 64px;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #1e1e1e;
             position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+        .logo-bar > h1 {
+            width: 1px;
+            height: 1px;
+            clip: rect(1px 1px 1px 1px);
+            overflow: hidden;
+            clip-path: inset(50%);
         }
         .logo-bar > figure {
-            width: 160px;
+            width: 140px;
             /* height: 64px; */
         }
         .logo-bar > figure > img {
-            width: 160px;
+            width: 140px;
         }
+    
         .go-btns {
-            width: 100%;
+            width: 100vw;
             height: 100vh;
             display: flex;
-            background-color: #1e1e1e;
         }
         .btn-area {
-            width: 50%;
-            height: 100%;
+            width: 50vw;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        .go-to a {
-            color: #ffffff;
-            font-weight: bold;
             text-decoration: none;
-            font-size: 18px;
         }
-        .go-to a:hover {
-            font-size: 16px;
+        .home-area {
+            background-image: url('http://bykak.com/wp-content/uploads/2024/01/shop_bg-1.png');
+            background-size: cover;
+            filter: grayscale(1);
             transition: 0.2s;
         }
-        @media screen and (max-width: 767px) {
+        .home-area:hover {
+            filter: grayscale(0);
+        }
+        .mall-area {
+            background-image: url('http://bykak.com/wp-content/uploads/2024/01/home_bg-1.png');
+            background-size: cover;
+            filter: grayscale(1);
+            transition: 0.2s;
+        }
+        .mall-area:hover {
+            filter: grayscale(0);
+        }
+        .go-to {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .go-to:hover p {
+            color: #ffffff32;
+        }
+        .go-to:hover span {
+            color: #ffffff32;
+        }
+        .go-to p {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 28px;
+            transition: 0.3s;
+        }
+        .go-to span {
+            color: #ffffff;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        @media screen and (max-width: 1080px) {
+            .mall-area {
+                filter: grayscale(0);
+            }
             .go-btns {
+                width: 100vw;
                 flex-direction: column;
+                justify-content: end;
+                align-items: center;
             }
             .btn-area {
                 width: 100%;
-                height: 50vh;
+                height: 50%;
+            }
+            .go-to p {
+                font-size: 24px;
             }
         }
-    </style> -->
+    </style>
 
+    <!-- ----------------------------------------------------------------------------------- -->
     <!-- <div class="slideshow">
-        <div class="slide">
+        <div class="slide main-slide-1">
             <h1>k!mjuhyeon by 覺</h1>
             <p>Sweing tradition and authenticity</p>
             <div class="more-btn">
                 <a href="#">Read More</a>
             </div>
         </div>
-        <div class="slide">
+        <div class="slide main-slide-2">
             <h1>by 覺 Tailor Academy</h1>
             <p>Creating better work than yesterday is the craftsmanship</p>
             <div class="more-btn">
                 <a href="#">Read More</a>
             </div>
         </div>
-        <div class="slide">
+        <div class="slide main-slide-3">
             <h1>New JemulpoClub</h1>
             <p>Cultural space that embodies the meaning of a social club</p>
             <div class="more-btn">
                 <a href="#">Read More</a>
             </div>
         </div>
-        <div class="slide">
+        <div class="slide main-slide-4">
             <h1>by 覺 Suit Rental Center</h1>
             <p>Confidence for that day, by 覺</p>
             <div class="more-btn">
@@ -372,12 +434,16 @@
             overflow: hidden;
             width: 100%;
             height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-
+        
         .slide {
+            z-index: 50;
             position: absolute;
-            width: 100%;
-            height: 100%;
+            width: 1200px;
+            height: 70vh;
             transition: 1s;
             display: none;
             flex-direction: column;
@@ -385,22 +451,21 @@
             animation: fadeout 5700ms infinite;
         }
         .slide > h1 {
-            color: #1e1e1e;
+            color: #ffffff;
         }
         .slide > p {
-            color: #1e1e1e;
+            font-size: 14px;
+            color: #ffffff;
         }
         .more-btn {
             padding-top: 20px;
         }
         .more-btn > a {
             text-decoration: none;
-            font-size: 18px;
-            color: #1e1e1e;
+            font-size: 15px;
+            color: #ffffff;
         }
-        .more-btn > a:hover {
-            font-size: 16px;
-        }
+        
         @keyframes fadeout {
             from {
                 opacity: 0;
@@ -417,6 +482,9 @@
         }
     </style>
 
+    <style>
+    </style>
+
     <script>
         const slides = document.querySelectorAll('.slide');
         let currentIndex = 0;
@@ -427,13 +495,197 @@
             slides[currentIndex].style.display = 'flex';
         }
         
-        
         slides[currentIndex].style.display = 'flex';
-
 
         setInterval(nextSlide, 5700);
     </script> -->
 
+
+    <!-- <iframe class="youtube-video"
+        src="https://www.youtube.com/embed/JucU5O_MLfk?si=vmPYYI_dt-fIWnu4?&autoplay=1&mute=1&controls=0&playlist=JucU5O_MLfk&loop=1"
+        allow="accelerometer;autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen
+    ></iframe> -->
+    <!-- <div class="video-screen">
+        <div class="main-video">
+            <video src="http://bykak.com/wp-content/uploads/2024/01/main_video.mp4" autoplay loop muted></video>
+        </div>
+        <div class="slideshow">
+            <div class="slide main-slide-1">
+                <h2 style="font-family: 'Times New Roman', Times, serif;">k!mjuhyeon by 覺</h2>
+                <p>Sweing tradition and authenticity</p>
+                <div class="more-btn">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="slide main-slide-2">
+                <h2 style="font-family: 'Times New Roman', Times, serif;">by 覺 Tailor Academy</h2>
+                <p>Creating better work than yesterday is the craftsmanship</p>
+                <div class="more-btn">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="slide main-slide-3">
+                <h2 style="font-family: 'Times New Roman', Times, serif;">New JemulpoClub</h2>
+                <p>Cultural space that embodies the meaning of a social club</p>
+                <div class="more-btn">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="slide main-slide-4">
+                <h2 style="font-family: 'Times New Roman', Times, serif;">by 覺 Suit Rental Center</h2>
+                <p>Confidence for that day, by 覺</p>
+                <div class="more-btn">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="mouse-move">
+            <div class="scroll-down">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .main-video > video {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        .slideshow {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slide {
+            width: 1200px;
+            height: 70vh;
+            padding: 0 16px;
+            transition: 1s;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            animation: fadeout 5700ms infinite;
+        }
+        
+        .slide > h2 {
+            color: #ffffff;
+            text-shadow: 3px 4px 5px #000000;
+        }
+        .slide > p {
+            font-size: 14px;
+            color: #ffffff;
+            text-shadow: 3px 4px 5px #000000;
+        }
+        .more-btn {
+            padding-top: 20px;
+        }
+        .more-btn > a {
+            text-decoration: none;
+            font-size: 15px;
+            color: #ffffff;
+            text-shadow: 3px 4px 5px #000000;
+        }
+        
+        @keyframes fadeout {
+            from {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+
+        .mouse-move {
+            position: absolute;
+            bottom: 80px;
+            width: 100%;
+            transition: 0.2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .scroll-down {
+            display: flex;
+            justify-content: center;
+            width: 20px;
+            height: 32px;
+            border: 2px solid #ffffff;
+            border-radius: 20px;
+            animation: scroll-down-animation 2s infinite;
+        }
+        @keyframes scroll-down-animation {
+            from {
+                transform: translateY(0);
+                opacity: 0;
+            }
+            20% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            to {
+                transform: translateY(8px);
+                opacity: 0;
+            }
+        }
+        .mouse-wheel {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            background-color: #ffffff;
+            animation: mouse-wheel-animation 2s infinite;
+        }
+        @keyframes mouse-wheel-animation {
+            from {
+                transform: translateY(0);
+                opacity: 0;
+            }
+            20% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            to {
+                transform: translateY(16px);
+                opacity: 0;
+            }
+        }
+    </style>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function nextSlide() {
+            slides[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].style.display = 'flex';
+        }
+        
+        slides[currentIndex].style.display = 'flex';
+
+        setInterval(nextSlide, 5700);
+    </script> -->
 
     <!-- <section class="supporters">
         <div class="sub-menu">
@@ -793,7 +1045,7 @@
         </script>
     </section> -->
 
-    <!-- <section class="book-area">
+    <section class="book-area">
         <div class="book-contents">
             <div class="book-btn">
                 <figure>
@@ -818,10 +1070,14 @@
         </div>
 
         <style>
+            .book-area {
+                opacity: 0;
+                transition: 0.5s;
+            }
             .book-contents {
                 position: fixed;
                 bottom: 16px;
-                right: 16px;
+                left: 16px;
                 display: flex;
                 flex-direction: column-reverse;
                 justify-content: center;
@@ -909,7 +1165,7 @@
             @media screen and (max-width: 767px) {
                 .book-contents {
                     bottom: 16px;
-                    right: 16px;
+                    left: 16px;
                 }
                 .book-btn {
                     width: 40px;
@@ -926,6 +1182,14 @@
         </style>
 
         <script>
+            window.onload = function() {
+                setTimeout(function() {
+                    bookArea.setAttribute("style", "opacity: 1;")
+                }, 2000)
+                bookScreen.setAttribute("style", "opacity: 0; display: none;");
+            }
+            
+            const bookArea = document.querySelector(".book-area");
             const bookBtn = document.querySelector(".book-btn");
             const bookScreen = document.querySelector(".book-screen");
             clickBtn = false;
@@ -948,76 +1212,410 @@
                 }
             });
         </script>
-    </section> -->
-    <div class="section">
-        <div class="nav-bar">
-            <div class="nav-bar-contents">
-                <figure class="nav-logo">
-                    <img src="http://bykak.com/wp-content/uploads/2023/10/bykakTextLogo_w.png" alt="김주현바이각">
-                </figure>
-                <ul class="nav-menu">
-                    <li><a href="#">브랜드</a></li>
-                    <li><a href="#">홍보</a></li>
-                    <li><a href="#">제품</a></li>
-                    <li><a href="#">커뮤니티</a></li>
-                    <li><a href="#">비즈니스</a></li>
+    </section>
+       
+    <!-- <div class="header-section">
+        <div class="main-bar">
+            <div class="main-contents">
+                <a class="header-logo" href="httpa://bykak.com">
+                    <figure>
+                        <img src="http://bykak.com/wp-content/uploads/2023/10/bykakTextLogo_w.png" alt="김주현바이각">
+                    </figure>
+                </a>
+                <ul class="main-menu">
+                    <li class="brand menu">
+                        <ul class="menu-text">
+                            <a href="https://bykak.com/home-kr/brand-kr/">Brand</a>
+                        </ul>
+                        <ul class="sub-menu sub-menu-1">
+                            <li>
+                                <a href="">바이 각 스토리</a>
+                            </li>
+                            <li>
+                                <a href="">김주현 바이 각</a>
+                            </li>
+                            <li>
+                                <a href="">바이 각 테일러아카데미</a>
+                            </li>
+                            <li>
+                                <a href="">신제물포구락부</a>
+                            </li>
+                            <li>
+                                <a href="">바이 각 수트렌탈센터</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="publicity menu">
+                        <ul class="menu-text">
+                            <a href="https://bykak.com/home-kr/publicity-kr/">Publicity</a>
+                        </ul>
+                        <ul class="sub-menu sub-menu-2">
+                            <li>
+                                <a href="">매거진</a>
+                            </li>
+                            <li>
+                                <a href="">보도자료</a>
+                            </li>
+                            <li>
+                                <a href="">협찬</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="product menu">
+                        <ul class="menu-text">
+                            <a href="https://bykak.com/home-kr/product-kr/">Made</a>
+                        </ul>
+                        <ul class="sub-menu sub-menu-3">
+                            <li>
+                                <a href="">자세히 보기</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="community menu">
+                        <ul class="menu-text">
+                            <a href="https://bykak.com/home-kr/community-kr/">Comunnity</a>
+                        </ul>
+                        <ul class="sub-menu sub-menu-4">
+                            <li>
+                                <a href="">문의하기</a>
+                            </li>
+                            <li>
+                                <a href="">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="">미디어</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="business menu">
+                        <ul class="menu-text">
+                            <a href="https://bykak.com/home-kr/business-kr/">Bussiness</a>
+                        </ul>
+                        <ul class="sub-menu sub-menu-5">
+                            <li>
+                                <a href="">서포터즈</a>
+                            </li>
+                            <li>
+                                <a href="">협업문의</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-                <ul class="nav-account">
-                    <li><a href="#">KR | EN</a></li>
-                    <li><a href="#">LogIn</a></li>
+                <ul class="language menu">
+                    <li>
+                        <a href="https://bykak.com/home/">KR|EN</a>
+                    </li>
                 </ul>
             </div>
         </div>
-
-        <style>
-            .nav-bar {
-                width: 100vw;
-                height: 64px;
-                background-color: #1e1e1e97;
-                list-style: none;
-                transition: 0.3s;
-            }
-            .nav-bar:hover {
-                background-color: #1e1e1e;
-            }
-            .nav-bar > .nav-bar-contents {
-                max-width: 1200px;
-                height: 64px;
-                margin: 0 auto;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-            .nav-bar .nav-logo {
-                width: 120px;
-                height: 32px;
-                margin: 0 16px;
-            }
-            .nav-bar .nav-logo > img {
-                width: 120px;
-                height: 32px;
-            }
-            .nav-bar .nav-menu {
-                display: flex;
-            }
-            .nav-menu > li {
-                margin: 0 16px;
-            }
-            .nav-menu > li > a {
-                color: #ffffff;
-                text-decoration: none;
-            }
-            .nav-bar .nav-account {
-                display: flex;
-            }
-            .nav-account > li {
-                margin: 0 16px;
-            }
-            .nav-account > li > a {
-                color: #ffffff;
-                text-decoration: none;
-            }
-        </style>
     </div>
+
+    <style>
+        .header-section{
+            width: 100vw;
+        }
+        .main-bar {
+            width: 100%;
+            height: 72px;
+            display: flex;
+            justify-content: center;
+            background-color: #1E1E1EC4;
+            transition: 0.2s;
+        }
+        .header-section:hover .main-bar {
+            background-color: #1E1E1E;
+        }
+        .main-contents {
+            width: 1200px;
+            padding: 0 16px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-logo {
+            display: flex;
+            align-items: center;
+            height: 72px;
+        }
+        .header-logo img {
+            width: 140px;
+        }
+
+        .main-menu {
+            display: flex;
+        }
+        .main-menu a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #FFFFFF;
+        }
+        .main-menu > .menu > .menu-text {
+            padding: 0 16px;
+            width: 100px;
+            height: 72px;
+            line-height: 72px;
+            text-align: center;
+        }
+        .main-menu > .menu > .sub-menu {
+            display: none;
+            opacity: 0;
+            position: fixed;
+            background-color: #1E1E1E;
+            transition: 0.2s;
+        }
+        .main-menu > .menu > .sub-menu {
+            display: none;
+        }
+        .menu > .sub-menu > li {
+            padding: 0 16px;
+            width: 200px;
+            height: 48px;
+            line-height: 48px;
+        }
+        
+        .language a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 72px;
+        }
+
+        </style>
+
+        <script>
+            const mainMenu = document.querySelectorAll(".menu .menu-text");
+            const subMenu = document.querySelectorAll(".sub-menu");
+
+            
+
+            console.log(mainMenu[0]);
+            for(let i = 0; i < mainMenu.length; i++) {
+                mainMenu[i].addEventListener('mouseover', function(){
+                    subMenu[i].style.display = 'block';
+                    subMenu[i].style.opacity = '1';
+                });
+                mainMenu[i].addEventListener('mouseout', function(){
+                    subMenu[i].style.opacity = '0';
+                    setTimeout(function() {
+                        subMenu[i].style.display = 'none';
+                    }, 200);
+                });
+            }
+        </script> -->
+
+    <!-- <div class="brand-bar">
+        <ul class="brands brands-1">
+            <li class="brand-1"><a href="https://kimjuhyeonbykak.cafe24.com/category/by-%E8%A6%BA-(%EB%B0%94%EC%9D%B4%EA%B0%81)/29/">kimjuhyeon by 覺</a></li>
+            <li class="brand-2"><a href="https://kimjuhyeonbykak.cafe24.com/category/MacArthur-(%EB%A7%A5%EC%95%84%EB%8D%94)/30/">Mac Arthur</a></li>
+            <li class="brand-3"><a href="https://kimjuhyeonbykak.cafe24.com/category/Fidelity-(%ED%94%BC%EB%8D%B8%EB%A6%AC%ED%8B%B0)/31/">Fidelity</a></li>
+            <li class="brand-4"><a href="https://kimjuhyeonbykak.cafe24.com/category/Sortie-(%EC%86%94%ED%8B%B0)/45/">Sortie</a></li>
+            <li class="brand-5"><a href="https://kimjuhyeonbykak.cafe24.com/category/Mementomori-(%EB%A9%94%EB%A9%98%ED%86%A0%EB%AA%A8%EB%A6%AC)/49/">Mementomori</a></li>
+        </ul>
+        <ul class="brands brands-2">
+            <li class="brand-1"><a href="https://kimjuhyeonbykak.cafe24.com/category/by-%E8%A6%BA-(%EB%B0%94%EC%9D%B4%EA%B0%81)/29/">kimjuhyeon by 覺</a></li>
+            <li class="brand-2"><a href="https://kimjuhyeonbykak.cafe24.com/category/MacArthur-(%EB%A7%A5%EC%95%84%EB%8D%94)/30/">Mac Arthur</a></li>
+            <li class="brand-3"><a href="https://kimjuhyeonbykak.cafe24.com/category/Fidelity-(%ED%94%BC%EB%8D%B8%EB%A6%AC%ED%8B%B0)/31/">Fidelity</a></li>
+            <li class="brand-4"><a href="https://kimjuhyeonbykak.cafe24.com/category/Sortie-(%EC%86%94%ED%8B%B0)/45/">Sortie</a></li>
+            <li class="brand-5"><a href="https://kimjuhyeonbykak.cafe24.com/category/Mementomori-(%EB%A9%94%EB%A9%98%ED%86%A0%EB%AA%A8%EB%A6%AC)/49/">Mementomori</a></li>
+        </ul>
+    </div>
+
+    <style>
+        .brand-bar {
+            width: 100vw;
+            display: flex;
+            background-color: #ffffff;
+            transition: 0.2s;
+            overflow: hidden;
+            border-top: solid 2px #1e1e1e;
+            border-bottom: solid 2px #1e1e1e;
+        }
+        .brand-bar:hover {
+            background-color: #1e1e1e;
+        }
+        .brand-bar:hover li a {
+            color: #ffffff;
+        }
+        .brands {
+            padding: 0 16px;
+            width: 100vw;
+            height: 56px;
+            display: flex;
+        }
+        .brands-1 {
+            animation: to-left-1 30s linear infinite;
+        }
+        .brands-2 {
+            animation: to-left-2 60s linear infinite;
+        }
+        .brands li {
+            width: 20vw;
+            text-align: center;
+        }
+        .brands li a {
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 56px;
+            font-weight: bold;
+            color: #1e1e1e;
+            transition: 0.2s;
+        }
+        .brands li a:hover {
+            cursor: pointer;
+            color: #ffffff45;
+        }
+        @keyframes to-left-1 {
+            from {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-100%);
+            }
+            50.01% {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        @keyframes to-left-2 {
+            from {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            50.01% {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-200%);
+            }
+        }
+    </style> -->
+
+    <!-- <div class="custom-btn">
+        <a href="#">
+            <img src="http://bykak.com/wp-content/uploads/2023/10/bykakTextLogo_w.png" alt="kimjuhyeon by kak">
+        </a>
+    </div>
+    
+    <style>
+        .custom-btn {
+            background-color: #1e1e1e;
+        }
+        .custom-btn > a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .custom-btn > a > img {
+            width: 160px;
+        }
+    </style>
+
+    <script>
+        var linkState = document.querySelector(".custom-btn");
+        var para = document.location.href.split("/").reverse();
+        console.log('para test : ' + para);
+        console.log(para.includes("home-en"));
+
+        if (para.includes("home-en") == false) {
+            linkState.firstChild.href = "https://bykak.com/home/"
+        } else {
+            linkState.firstChild.href = "https://bykak.com/home-en/"
+        }
+    </script> -->
+
+    <!-- <div class="tailor-shoip-service">
+        <div class="service-text">
+            <p class="default-service">1. Rent a bow tie forwedding photography or wedding ceremonies.</p>
+        </div>
+        <div class="service-text">
+            <p class="default-service">2. Change the lapel so that can wear it as daily suit after the ceremony.</p>
+        </div>
+            <div class="service-text">
+            <p class="default-service">3. If you wish, replace the buttons after the ceremony.</p>
+        </div>
+        <div class="service-text">
+            <p class="default-service">4.When customizing formal wear, create high-quality custom shirts.</p>
+        </div>
+            <div class="service-text">
+            <p class="default-service">5. Provide free repairs for life.</p>
+        </div>
+    </div>
+
+    <style>
+        .service-text {
+            height: 32px;
+            border-bottom: solid 1px #929292;
+        }
+        .service-text > p  {
+            line-height: 32px;
+            font-size: 16px;
+        }
+        @media screen and (max-width: 1024px) {
+            .service-text {
+                height: 24px;
+                border-bottom: solid 1px #929292;
+            }
+            .service-text > p  {
+                line-height: 24px;
+                font-size: 14px;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            .service-text {
+                height: 20px;
+                border-bottom: solid 1px #929292;
+            }
+            .service-text > p  {
+                line-height: 20px;
+                font-size: 12px;
+            }
+        }
+    </style> -->
+
+    <!-- <div class="link-logo">
+        <a href="#">
+            <img src="http://kimjuhyeon.mycafe24.com/wp-content/uploads/2023/10/bykakTextLogo_w.png" alt="kimjuhyeon by kak">
+        </a>
+        <h1>kimjuhyeon by kak</h1>
+    </div>
+    
+    <style>
+        .link-logo {
+            width: 160px;
+            background-color: #1e1e1e;
+        }
+        .link-logo img {
+            width: 160px;
+        }
+        .link-logo > h1 {
+            width: 1px;
+            height: 1px;
+            clip: rect(1px 1px 1px 1px);
+            overflow: hidden;
+            clip-path: inset(50%);
+        }
+    </style>
+
+    <script>
+        var linkState = document.querySelector(".link-logo");
+        var para = document.location.href.split("/").reverse();
+        console.log('para test : ' + para);
+        console.log(para.includes("home-en"));
+
+        if (para.includes("home-en") == false) {
+            console.log('run1');
+            linkState.firstChild.href = "https://bykak.com/home/";
+        } else {
+            console.log('run2');
+            linkState.firstChild.href = "https://bykak.com/home-en/";
+        }
+    </script> -->
 </body>
 </html>
